@@ -30,7 +30,7 @@ with similar structures to the uploaded structural template.
 <br />
 <br />
 
-## 3.GMPS pipeline (for local test)
+## 3. GMPS pipeline (for local test)
 Pipeline (https://github.com/kad-ecoli/GMPS/) to perform structural search through the Gut Microbial Protein Structure (GMPS) database.
 
 ### Installation ###
