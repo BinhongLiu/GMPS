@@ -30,11 +30,42 @@ with similar structures to the uploaded structural template.
 <br />
 <br />
 
-## 3. The predicted protein structures from 12 type phages
-Genomes, protein sequences, and structures of 12 type phages predicted by AlphaFold2 can be freely downloaded from the figshare (https://doi.org/10.6084/m9.figshare.26984035.v1). These well-studied phage proteins are clustered together with gut phage protein structures to infer the functions of unannotated gut phage proteins.
-<br />
+## 3.GMPS pipeline (for local test)
+Pipeline (https://github.com/kad-ecoli/GMPS/) to perform structural search through the Gut Microbial Protein Structure (GMPS) database.
 
-List of type phages:<br />
-Escherichia phage P1、Escherichia phage P2、Bacteriophage P2、Enterobacteria phage P4、<br />
-Enterobacteria phage T3、Escherichia phage T4、Escherichia phage T5、Escherichia phage T7<br />
-Escherichia phage HK97、Escherichia phage Lambda、Escherichia phage Mu、Inovirus M13<br />
+## Installation ##
+
+Most executables are already precompiled for 64bit Linux at "Apps/".
+(Optionally) to generate images for the top 10 hits, set up the path to PyMOL executable at line 18 of GMPS_Search_v2.sh:
+```bash
+pymol=/usr/bin/pymol
+```
+
+This package only includes structures of one species (the bacteria Bifidobacterium adolescentis). To download structures of other species:
+```bash
+./GMPS_download.sh
+```
+
+## Run ##
+
+Get help document:
+```bash
+./GMPS_Search_v2.sh -h
+```
+
+An example to search Human AADC through Bifidobacterium adolescentis
+```bash
+./GMPS_Search_v2.sh -q example/3rbf.pdb  -c Bacteria -s Bifidobacterium_adolescentis -o output
+```
+or simply
+```bash
+./GMPS_Search_v2.sh
+```
+The output files will be written to "output/results/C_Bacteria_S_Bifidobacterium_adolescentis_Q_3rbf/", where usalign_hits.csv is the list of identified hits, while the superimposed structures for the top 10 hits are available at "best_hit_models/".
+
+
+## Citation ##
+H Liu, J Shen, Z Zhang, C Zhang, K Wang, L Zheng, H Ni, D Xue, Y Ma, T Si, L Zheng, S Wang, C Jiang, L Dai
+(2025) "Exploring Functional Insights into the Human Gut Microbiome via the Structural Proteome." Under revision.
+
+
