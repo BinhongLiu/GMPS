@@ -15,7 +15,7 @@ d. structural domain segmentation<br />
 <br />
 
 ## 2. The human Gut Microbial Protein Structure database (GMPS)
-The human Gut Microbial Protein Structure database (GMPS) includes AlphaFold2 predicted protein structures from 1496 phage genomes and 968 bacteria genomes. The GMPS database is freely available to the public without registration or login requirements (http://siat.dthink.net:81/home/align). Users can freely download the genomes, protein sequences, and protein structures. Users can also perform BLAST-like searches (based on structure similarity, instead of sequence similarity) across microbial genomes to search for microbial proteins
+The human Gut Microbial Protein Structure database (GMPS) includes AlphaFold2 predicted protein structures from 1496 phage genomes and 968 bacteria genomes. The GMPS database is freely available to the public without registration or login requirements (https://www.gmpsdb.cn). Users can freely download the genomes, protein sequences, and protein structures. Users can also perform BLAST-like searches (based on structure similarity, instead of sequence similarity) across microbial genomes to search for microbial proteins
 with similar structures to the uploaded structural template.
 <br />
 <br />
