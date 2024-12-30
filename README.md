@@ -1,4 +1,4 @@
-# Functional-Discovery-of-the-Human-Gut-Microbiome-via-the-Structural-Proteome
+# Exploring Functional Insights into the Human Gut Microbiome via the Structural Proteome
 
 Here we provide associated scripts and PDB files for the manuscript: Functional Discovery of the Human Gut Microbiome via the Structural Proteome.
 
