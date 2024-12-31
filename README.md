@@ -27,7 +27,11 @@ The human Gut Microbial Protein Structure database (GMPS) includes AlphaFold2 pr
 <img src="https://github.com/user-attachments/assets/a3dd2241-b3b7-49d9-86e0-6426fe26ce53" width="500" />
 <br />
 <br />
+
+### 2.1 Download GMPS via wget
+We have provided a file (wget_links_download.csv) containing the links through which users can directly download the database using e.g. wget.
 <br />
+### 2.2 Bulk download of GMPS via wget
 The GMPS database, along with the genomes, protein sequences, and predicted protein structures of the 12 well-studied bacteriophages of E. coli, are also available for bulk download from DRYAD (http://datadryad.org/stash/share/jEoO5KaJgRi-xLp1Rw3_Kakh9AXK0jV_ZMUjLGleBh4).
 <br />
 <br />
