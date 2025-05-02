@@ -70,7 +70,7 @@ or simply
 ```
 The output files will be written to "output/results/C_Bacteria_S_Bifidobacterium_adolescentis_Q_3rbf/", where usalign_hits.csv is the list of identified hits, while the superimposed structures for the top 10 hits are available at "best_hit_models/".
 
-### Dense Enzyme Retrieval (DEER) ###
+## 4. Dense Enzyme Retrieval (DEER)
 DEER (Dense Enzyme Retrieval) provides a method for finding functionally related human-bacteria isozymes using learned dense vector representations (embeddings). This repository (https://github.com/WangJiuming/deer) contains the code, pre-trained models, and example data necessary to reproduce the results and apply DEER to new enzyme sequences, as presented in our paper.
 
 
