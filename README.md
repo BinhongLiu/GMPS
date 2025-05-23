@@ -75,7 +75,14 @@ DEER (Dense Enzyme Retrieval) provides a method for finding functionally related
 
 
 ### Citation ###
-H Liu, J Shen, Z Zhang, C Zhang, K Wang, L Zheng, H Ni, D Xue, Y Ma, T Si, L Zheng, S Wang, C Jiang, L Dai
-(2025) "Exploring Functional Insights into the Human Gut Microbiome via the Structural Proteome." Under revision.
+If you use DEER or this codebase in your research, please cite our paper:
+```
+@misc{liu2025Exploring,
+  author={Liu, H. and Shen, J. and others},
+  title={Exploring Functional Insights into the Human Gut Microbiome via the Structural Proteome},
+  year={2025},
+  note={Manuscript under revision}
+}
+```
 
 
