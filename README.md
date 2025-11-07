@@ -24,7 +24,7 @@ The human Gut Microbial Protein Structure database (GMPS) includes AlphaFold2 pr
 
 <br />
 <br />
-<img src="https://github.com/user-attachments/assets/a3dd2241-b3b7-49d9-86e0-6426fe26ce53" width="500" />
+<img src="https://github.com/user-attachments/assets/64f38fd2-acae-42be-a890-f7deb9377dfa" width="500" />
 <br />
 <br />
 
