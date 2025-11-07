@@ -72,16 +72,20 @@ The output files will be written to "output/results/C_Bacteria_S_Bifidobacterium
 
 ## 4. Dense Enzyme Retrieval (DEER)
 DEER (Dense Enzyme Retrieval) provides a method for finding functionally related human-bacteria isozymes using learned dense vector representations (embeddings). This repository (https://github.com/WangJiuming/deer) contains the code, pre-trained models, and example data necessary to reproduce the results and apply DEER to new enzyme sequences, as presented in our paper.
-
+### CAUTION! ###
+The current DEER model was pre-trained on the CARE enzyme dataset and is specifically optimized for enzyme retrieval. DEER results should not be used for downstream analysis when non-enzyme templates are employed for remote homolog searches. To apply DEER for other protein types (e.g., spike protein), users must retrain the model.
 
 ### Citation ###
 If you use DEER or this codebase in your research, please cite our paper:
 ```
+<br />
+<br />
+
 @misc{liu2025Exploring,
   author={Liu, H. and Shen, J. and others},
   title={Exploring Functional Insights into the Human Gut Microbiome via the Structural Proteome},
   year={2025},
-  note={Manuscript under revision}
+  note={Cell Host & Microbe}
 }
 ```
 
