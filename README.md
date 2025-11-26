@@ -37,40 +37,7 @@ The GMPS database, along with the genomes, protein sequences, and predicted prot
 <br />
 <br />
 
-## 3. GMPS pipeline (for local test)
-Pipeline (https://github.com/kad-ecoli/GMPS/) to perform structural search through the Gut Microbial Protein Structure (GMPS) database.
-
-### Installation ###
-
-Most executables are already precompiled for 64bit Linux at "Apps/".
-(Optionally) to generate images for the top 10 hits, set up the path to PyMOL executable at line 18 of GMPS_Search_v2.sh:
-```bash
-pymol=/usr/bin/pymol
-```
-
-This package only includes structures of one species (the bacteria Bifidobacterium adolescentis). To download structures of other species:
-```bash
-./GMPS_download.sh
-```
-
-### Run ###
-
-Get help document:
-```bash
-./GMPS_Search_v2.sh -h
-```
-
-An example to search Human AADC through Bifidobacterium adolescentis
-```bash
-./GMPS_Search_v2.sh -q example/3rbf.pdb  -c Bacteria -s Bifidobacterium_adolescentis -o output
-```
-or simply
-```bash
-./GMPS_Search_v2.sh
-```
-The output files will be written to "output/results/C_Bacteria_S_Bifidobacterium_adolescentis_Q_3rbf/", where usalign_hits.csv is the list of identified hits, while the superimposed structures for the top 10 hits are available at "best_hit_models/".
-
-## 4. Dense Enzyme Retrieval (DEER)
+## 3. Dense Enzyme Retrieval (DEER)
 DEER (Dense Enzyme Retrieval) provides a method for finding functionally related human-bacteria isozymes using learned dense vector representations (embeddings). This repository (https://github.com/WangJiuming/deer) contains the code, pre-trained models, and example data necessary to reproduce the results and apply DEER to new enzyme sequences, as presented in our paper.
 ### CAUTION! ###
 The current DEER model was pre-trained on the CARE enzyme dataset and is specifically optimized for analogous enzyme retrieval. DEER results should not be used for downstream analysis when non-enzyme templates are employed for remote homolog searches. To apply DEER for other protein types (e.g., spike protein), users must retrain the model.
